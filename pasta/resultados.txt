@@ -1,0 +1,31 @@
+Exemplo1
+s1:21
+s2:3
+resp:19
+instrucoes: 72
+iterações: 29
+
+Exemplo 2
+String s1 = "asdka12l123a123";
+String s2 = "a123";
+resp:11
+instrucoes: 55
+iterações: 22
+
+Exemplo 3
+strings 600K
+resp: 0
+instrucoes: 1200007
+iterações: 600001
+
+Exemplo 4
+string 60M (N)
+0
+instrucoes: 120000007
+iterações: 60000001
+
+Exemplo 5
+string 60M, pior caso (último caractere diferente)(2N)
+-1
+instrucoes: 246803823
+iterações: 121950717
