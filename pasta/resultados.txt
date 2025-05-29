@@ -1,4 +1,4 @@
-Exemplo1
+Exemplo1            
 s1:21
 s2:3
 resp:19
@@ -25,7 +25,42 @@ instrucoes: 120000007
 iterações: 60000001
 
 Exemplo 5
-string 60M, pior caso (último caractere diferente)(2N)
+string 60M, pior caso (último caractere diferente)(2m)
 -1
-instrucoes: 246803823
-iterações: 121950717
+instrucoes: 613.646.124
+iterações: 121.950.717
+
+Exemplo 6 (m)
+stringao;stringuinho
+instrucoes: 253.651.954
+iterações: 61.952.529
+
+Exemplo 7 (m*n)
+stringA (600K);pat(5)
+resp: 599995
+instrucoes: 21.599.865
+iterações: 3.599.977
+-------------------------------------
+Rabin-Karp
+
+Exemplo 1
+r:19
+Instrucoes: 526
+Iteracoes: 104
+
+Exemplo 600K
+Instrucoes: 7200014
+Iteracoes: 1200003
+
+Exemplo pior caso 60M ultimo diferente (3n)
+Instrucoes: 1.260.000.018
+Iteracoes: 180.000.002
+
+Exemplo 6 (m)
+Instrucoes: 420.000.006;
+Iteracoes: 60.000.000
+
+Exemplo 7 (m * (n+1))
+599995
+Instrucoes: 28.799.857;
+Iteracoes: 4.199.978
