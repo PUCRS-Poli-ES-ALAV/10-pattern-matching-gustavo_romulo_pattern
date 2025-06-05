@@ -64,3 +64,7 @@ Exemplo 7 (m * (n+1))
 599995
 Instrucoes: 28.799.857;
 Iteracoes: 4.199.978
+
+-----------------
+Rolling Hash (preliminar)
+Exemplo 
