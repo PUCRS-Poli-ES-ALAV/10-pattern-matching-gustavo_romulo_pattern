@@ -31,24 +31,25 @@ public class RabinKarp {
     private static int search(String pat, String txt) {
         int M = pat.length();
         int N = txt.length();
-        countIns += 2;
+        countIns += 4;
 
         long patHash = hash(pat, M); // hash do padrão
         countIns++;
 
+        countIns++;
         for (int i = 0; i <= N - M; i++) {
             countItr++; // iteração principal do Rabin-Karp
-            countIns += 2; // comparação de limite e incremento do i
+            countIns += 3; // comparação de limite e incremento do i
 
             String sub = txt.substring(i, i + M);
-            countIns++; // substring
+            countIns+=3; // substring
             long txtHash = hash(sub, M);
             countIns++; // atribuição do hash
 
+            countIns++;
             if (patHash == txtHash) {
-                countIns++; // comparação
                 countIns++; // retorno
-                return i; // ocorrência encontrada
+                return i; // ocorrencia encontrada
             }
         }
 
@@ -60,11 +61,12 @@ public class RabinKarp {
         long h = 0;
         countIns++; // inicialização de h
 
+        countIns++;
         for (int j = 0; j < M; j++) {
-            countItr++; // iteração de hash
-            countIns += 3; // comparação, incremento do j, charAt
+            countItr++;
+            countIns += 2;
             h = (h * R + s.charAt(j)) % Q;
-            countIns += 4; // multiplicação, adição, módulo, atribuição
+            countIns += 5;
         }
 
         countIns++; // retorno

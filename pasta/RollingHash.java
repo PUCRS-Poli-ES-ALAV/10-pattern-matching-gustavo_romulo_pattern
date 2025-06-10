@@ -35,7 +35,7 @@ public class RollingHash {
 
         long patHash = hash(pat, M); // hash do padrão
         //long hash1 = hash(txt,M);
-        countIns+=2;
+        countIns++;
 
         String ini = txt.substring(0, M); 
         countIns++; //string
@@ -87,10 +87,10 @@ public class RollingHash {
         countIns++; // inicialização de h
 
         for (int j = 0; j < M; j++) {
-            countItr++; // iteração de hash
-            countIns += 3; // comparação, incremento do j, charAt
+            countItr++; 
+            countIns += 3; 
             h = (h * R + s.charAt(j)) % Q;
-            countIns += 4; // multiplicação, adição, módulo, atribuição
+            countIns += 5; 
         }
 
         countIns++; // retorno

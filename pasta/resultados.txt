@@ -68,3 +68,24 @@ Iteracoes: 4.199.978
 -----------------
 Rolling Hash (preliminar)
 Exemplo 
+
+-----------------
+KMP
+Exemplo 1
+Found pattern at index 19
+countIns: 291
+countItr: 24
+
+Exemplo 2
+Found pattern at index 11
+countIns: 208
+countItr: 18
+
+Exemplo 5
+countIns: 2.099.999.995
+countItr: 239.999.998
+
+Exemplo 7 (stringA, pat)
+599995
+countIns: 8400056
+countItr: 600009
