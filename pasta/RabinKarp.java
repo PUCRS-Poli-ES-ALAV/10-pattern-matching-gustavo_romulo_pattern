@@ -21,9 +21,9 @@ public class RabinKarp {
             System.out.println("exception");
         }
 
-        String pat = "ADF";
-        String txt = "ABCDCBDCBDACBDABDCBADF";
-        int resp = search(bigS1, bigS2);
+        String pat = "a123";
+        String txt = "asdka12l123a123";
+        int resp = search(pat, txt);
         System.out.println(resp);
         System.out.println("Instrucoes: " + countIns + "; Iteracoes: " + countItr);
     }

@@ -15,14 +15,14 @@ public class RollingHash {
 
         try {
             bigS1 = new String(Files.readAllBytes(Paths.get("pat.txt")));
-            bigS2 = new String(Files.readAllBytes(Paths.get("string600.txt")));
+            bigS2 = new String(Files.readAllBytes(Paths.get("stringA.txt")));
         } catch (IOException e) {
             System.out.println(e);
             System.out.println("exception");
         }
 
-        String pat = "ADF";
-        String txt = "ABCDCBDCBDACBDABDCBADF";
+        String pat = "a123";
+        String txt = "asdka12l123a123";
         int resp = search(bigS1, bigS2);
         System.out.println(resp);
         System.out.println("Instrucoes: " + countIns + "; Iteracoes: " + countItr);
